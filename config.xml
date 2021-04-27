@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd"
+	xmlns:p="http://www.springframework.org/schema/p">
+
+	<bean class="come.navin.Telusko.Student" name="student1"
+		p:studentId="23423" p:studentName="Vivek Vishwakarma"
+		p:studentAddress="Barabanki" />
+
+	<bean class="come.navin.Telusko.Student" name="student2">
+		<property name="studentId" value="12343" />
+
+		<property name="studentName" value="Shivraj Verma" />
+
+		<property name="studentAddress" value="Hasan Pur Tanda" />
+	</bean>
+
+	<bean class="come.navin.Telusko.Student" name="student3">
+		<property name="studentId">
+			<value>24234</value>
+		</property>
+
+		<property name="studentName">
+			<value>Samitrrrrr</value>
+		</property>
+
+		<property name="studentAddress">
+			<value>Hasan Pur vtanda44</value>
+		</property>
+	</bean>
+
+</beans>
